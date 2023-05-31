@@ -50,6 +50,10 @@ brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
 
 # Apps
+cask "affinity-designer"
+cask "affinity-photo"
+cask "affinity-publisher"
+cask "microsoft-office"
 cask "beekeeper-studio"
 cask "discord"
 cask "docker"
