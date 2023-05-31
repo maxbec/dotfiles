@@ -3,7 +3,7 @@
 echo "Cloning repositories..."
 
 SITES=$HOME/Sites
-LARAVEL=$SITES/navigaite
+LARAVEL=$SITES/Navigaite
 
 # Personal
 
