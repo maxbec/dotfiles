@@ -5,6 +5,9 @@ tap 'homebrew/cask-versions'
 tap "homebrew/core"
 tap 'homebrew/bundle'
 tap "domt4/autoupdate"
+tap "stripe/stripe-cli"
+tap "stripe/stripe-mock"
+tap "romkatv/powerlevel10k"
 
 # Binaries
 brew "act"
@@ -90,6 +93,7 @@ cask 'tunnelbear'
 cask 'tuple'
 cask 'visual-studio-code'
 cask 'zoom'
+cask 'logi-options-plus'
 
 # Fonts
 cask 'font-lato'
