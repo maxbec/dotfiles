@@ -69,4 +69,4 @@ ln -s .mackup.cfg $HOME/.mackup.cfg
 # Set macOS preferences - we will run this last because this will reload the shell
 echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Set macOS preferences - we will run this last because this will reload the shell"
-source ./.macos
+source ./.macos 2> /dev/null
