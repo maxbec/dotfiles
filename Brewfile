@@ -49,6 +49,8 @@ brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
 brew 'romkatv/powerlevel10k/powerlevel10k'
+brew 'zsh-autosuggestions'
+brew 'zsh-completions'
 
 # Apps
 cask "affinity-designer"

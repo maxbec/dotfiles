@@ -78,6 +78,12 @@ plugins=(git jenv zsh-autosuggestions zsh-completions)
 # Source config files
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Fpaths
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+FPATH=$(brew --prefix)/share/zsh/site-functions:${FPATH}
+
 
 # User configuration
 
