@@ -48,6 +48,7 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
+brew 'romkatv/powerlevel10k/powerlevel10k'
 
 # Apps
 cask "affinity-designer"

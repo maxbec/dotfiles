@@ -75,7 +75,9 @@ ZSH_CUSTOM=$DOTFILES
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git jenv zsh-autosuggestions zsh-completions)
 
+# Source config files
 source $ZSH/oh-my-zsh.sh
+source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # User configuration
 
