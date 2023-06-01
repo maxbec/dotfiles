@@ -4,27 +4,27 @@ echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  echo "++++++++++++++++++++++++++++++++++++++"
-  echo "==> Brew not found. Will be installed now..."
+    echo "++++++++++++++++++++++++++++++++++++++"
+    echo "==> Brew not found. Will be installed now..."
 
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>$HOME/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
-  echo "++++++++++++++++++++++++++++++++++++++"
-  echo "==> Brew is already installed!"
+    echo "++++++++++++++++++++++++++++++++++++++"
+    echo "==> Brew is already installed!"
 fi
 
 # Check for Oh My Zsh and install if we don't have it
 if test ! $(which omz); then
-  echo "++++++++++++++++++++++++++++++++++++++"
-  echo "==> OMZ not found. Will be installed now..."
+    echo "++++++++++++++++++++++++++++++++++++++"
+    echo "==> OMZ not found. Will be installed now..."
 
-  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 else
-  echo "++++++++++++++++++++++++++++++++++++++"
-  echo "==> OMZ is already installed!"
+    echo "++++++++++++++++++++++++++++++++++++++"
+    echo "==> OMZ is already installed!"
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
@@ -32,7 +32,7 @@ echo "++++++++++++++++++++++++++++++++++++++"
 echo "Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles"
 echo "++++++++++++++++++++++++++++++++++++++"
 rm -rf $HOME/.zshrc
-ln -s .zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 echo "++++++++++++++++++++++++++++++++++++++"
@@ -64,9 +64,9 @@ echo "==> Clone Github repositories"
 # Symlink the Mackup config file to the home directory
 echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Symlink the Mackup config file to the home directory"
-ln -s .mackup.cfg $HOME/.mackup.cfg
+ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Set macOS preferences - we will run this last because this will reload the shell"
-source ./.macos
+# source ./.macos
