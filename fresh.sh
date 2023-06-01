@@ -32,7 +32,7 @@ echo "++++++++++++++++++++++++++++++++++++++"
 echo "Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles"
 echo "++++++++++++++++++++++++++++++++++++++"
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -v -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 echo "++++++++++++++++++++++++++++++++++++++"
@@ -44,6 +44,8 @@ echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Install all our dependencies with bundle (See Brewfile)"
 brew tap homebrew/bundle
 brew bundle -v --file ./Brewfile
+brew autoupdate delete
+brew autoupdate --start 43200 --upgrade --cleanup
 
 # Set default MySQL root password and auth type
 echo "++++++++++++++++++++++++++++++++++++++"
@@ -64,7 +66,20 @@ echo "==> Clone Github repositories"
 # Symlink the Mackup config file to the home directory
 echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Symlink the Mackup config file to the home directory"
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+rm -rf $HOME/.mackup.cfg
+ln -v -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+
+# Symlink the gitconfig config file to the home directory
+echo "++++++++++++++++++++++++++++++++++++++"
+echo "==> Symlink the gitconfig config file to the home directory"
+rm -rf $HOME/.gitconfig
+ln -v -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+
+# Symlink the Powerlevel10k config file to the home directory
+echo "++++++++++++++++++++++++++++++++++++++"
+echo "==> Symlink the Powerlevel10k config file to the home directory"
+rm -rf $HOME/.p10k.zsh
+ln -v -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 echo "++++++++++++++++++++++++++++++++++++++"

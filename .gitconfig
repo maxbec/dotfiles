@@ -1,0 +1,23 @@
+[user]
+	name = Max Beckenbauer
+	email = max.bec92@gmail.com
+	signingkey = 7401F48A597DD486
+[commit]
+	gpgsign = true
+[core]
+	editor = code --wait
+	excludesFile = ~/.gitignore
+[http]
+	postBuffer = 157286400
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
