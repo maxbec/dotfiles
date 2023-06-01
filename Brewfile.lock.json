@@ -1784,6 +1784,10 @@
             }
           }
         }
+      },
+      "koekeishiya/formulae/yabai": {
+        "version": "5.0.6",
+        "bottle": false
       }
     },
     "cask": {
@@ -2145,6 +2149,18 @@
         "version": "2.2323.3",
         "options": {
           "full_name": "whatsapp-beta"
+        }
+      },
+      "ngrok": {
+        "version": "3.3.0,d3cF1MADy4n,a",
+        "options": {
+          "full_name": "ngrok"
+        }
+      },
+      "whatsapp-alpha": {
+        "version": "2.23.11.74",
+        "options": {
+          "full_name": "whatsapp-alpha"
         }
       }
     },

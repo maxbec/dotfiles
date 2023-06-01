@@ -75,6 +75,13 @@ echo "==> Symlink the gitconfig config file to the home directory"
 rm -rf $HOME/.gitconfig
 ln -v -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
+# Symlink the yabai config file to the home directory
+echo "++++++++++++++++++++++++++++++++++++++"
+echo "==> Symlink the yabai config file to the home directory"
+rm -rf $HOME/.yabairc
+ln -v -s $HOME/.dotfiles/.yabairc $HOME/.yabairc
+chmod +x $HOME/.yabairc
+
 # Symlink the Powerlevel10k config file to the home directory
 echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Symlink the Powerlevel10k config file to the home directory"
