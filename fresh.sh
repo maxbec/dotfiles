@@ -3,7 +3,9 @@
 echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
+if
+    ! command -v brew >/dev/null
+then
     echo "++++++++++++++++++++++++++++++++++++++"
     echo "==> Brew not found. Will be installed now..."
 
@@ -16,8 +18,9 @@ else
     echo "==> Brew is already installed!"
 fi
 
-# Check for Oh My Zsh and install if we don't have it
-if test ! $(which omz); then
+if
+    ! command -v omz >/dev/null
+then
     echo "++++++++++++++++++++++++++++++++++++++"
     echo "==> OMZ not found. Will be installed now..."
 
@@ -52,16 +55,26 @@ echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Set default MySQL root password and auth type"
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
-# Create a Sites directory
-echo "++++++++++++++++++++++++++++++++++++++"
-echo "==> Create a Sites directory"
-mkdir $HOME/Sites
-mkdir $HOME/Sites/Navigaite
-
 # Clone Github repositories
 echo "++++++++++++++++++++++++++++++++++++++"
+echo "==> Create a Projects directory"
+PERSONAL_GITHUB=git@github.com:maxbec
+NAVIGAITE_GITHUB=git@github.com:navigaite
+PERSONAL=$HOME/Projects/Personal
+NAVIGAITE=$HOME/Projects/Navigaite
+
+mkdir -p $PERSONAL
+mkdir -p $NAVIGAITE
+
+echo "++++++++++++++++++++++++++++++++++++++"
 echo "==> Clone Github repositories"
-./clone.sh
+# Personal
+git clone $PERSONAL_GITHUB/openHAB-Alignment-Tool.git $PERSONAL/openHAB-Alignment-Tool
+git clone $PERSONAL_GITHUB/AMIGAA-Control-Station.git $PERSONAL/AMIGAA-Control-Station
+# Navigaite
+git clone $NAVIGAITE_GITHUB/maimaldrei-mietkatalog.git $NAVIGAITE/maimaldrei-mietkatalog
+git clone $NAVIGAITE_GITHUB/maimaldrei-importer.git $NAVIGAITE/maimaldrei-importer
+git clone $NAVIGAITE_GITHUB/navigaite-website.git $NAVIGAITE/navigaite-website
 
 # Symlink the Mackup config file to the home directory
 echo "++++++++++++++++++++++++++++++++++++++"

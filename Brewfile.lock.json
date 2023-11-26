@@ -5,16 +5,16 @@
         "revision": "8ff1887462afd0473a05ab842d0ac95bfb869ff6"
       },
       "homebrew/cask-fonts": {
-        "revision": "58fcdda81696a186d0defd8dd0c7f9d189fabb31"
+        "revision": "5970659d7741831ed42dddd198bb60ced6a60501"
       },
       "homebrew/cask-versions": {
-        "revision": "f5a5d42902e7fc7cbfb47fdb938b583105b85ac7"
+        "revision": "74583429c8f34599495709950e661ca98ab15a07"
       },
       "homebrew/core": {
         "revision": "4d01ffe6c0145e3a0918f19c7475f974a506cfd5"
       },
       "homebrew/bundle": {
-        "revision": "b2b11e80323b5d938aec80b3fd07e95348d911b4"
+        "revision": "266cc681311bdd8a40edd0476ceffb1b0054c772"
       },
       "domt4/autoupdate": {
         "revision": "463eee77b821bcb448f3891ba8bc1ae543c77fbd"
@@ -1100,45 +1100,45 @@
         }
       },
       "swagger-codegen": {
-        "version": "3.0.44",
+        "version": "3.0.45",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:ce94a8df7657872940d30b6f303ddad64fb07f4e3f4c01a227106d681f2ea6a6",
-              "sha256": "ce94a8df7657872940d30b6f303ddad64fb07f4e3f4c01a227106d681f2ea6a6"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:c189dd76cf470833a893b853c0075766e0c2bbbab0dba908a4b8d65ae4e1ac62",
+              "sha256": "c189dd76cf470833a893b853c0075766e0c2bbbab0dba908a4b8d65ae4e1ac62"
             },
             "arm64_monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:c7052c2a4fe56ad6203a16837fa0c0390c8a55a2e66f763e935182e6e7e18f15",
-              "sha256": "c7052c2a4fe56ad6203a16837fa0c0390c8a55a2e66f763e935182e6e7e18f15"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:da00504c1f969ea2915c7efae003c9a263da0a516b64d48009f7907cbbde1013",
+              "sha256": "da00504c1f969ea2915c7efae003c9a263da0a516b64d48009f7907cbbde1013"
             },
             "arm64_big_sur": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:6dc34122ad983a30f800d1c4634a0108df29657f7667ad6763024c437e6a70ef",
-              "sha256": "6dc34122ad983a30f800d1c4634a0108df29657f7667ad6763024c437e6a70ef"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:5f5e1bb4aa2c1083e38124b98ac6206b4be149dcce3ff777f0b4027e4dbdfefd",
+              "sha256": "5f5e1bb4aa2c1083e38124b98ac6206b4be149dcce3ff777f0b4027e4dbdfefd"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:f4d85ff515d4a2e5889c0a5c21f010d1262ab00697728b0b27c371594ad3efce",
-              "sha256": "f4d85ff515d4a2e5889c0a5c21f010d1262ab00697728b0b27c371594ad3efce"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:0a7c06f55ea608b83fb38cc6da8dc5cec8f2a27504bc6571525da78debc50f91",
+              "sha256": "0a7c06f55ea608b83fb38cc6da8dc5cec8f2a27504bc6571525da78debc50f91"
             },
             "monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:34aa7966c95587238a127616819918509c0b7aff0d7d043d2440c43f92ba4913",
-              "sha256": "34aa7966c95587238a127616819918509c0b7aff0d7d043d2440c43f92ba4913"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:6e4ef51fdd65abb0858e63cfd1fabd9aa28e7f857d51a52b0790bca766ed75cc",
+              "sha256": "6e4ef51fdd65abb0858e63cfd1fabd9aa28e7f857d51a52b0790bca766ed75cc"
             },
             "big_sur": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:49008d4dad21822e4b1b4cbf6812e7eaa842cf017dfc3f436ab609bdccbd6670",
-              "sha256": "49008d4dad21822e4b1b4cbf6812e7eaa842cf017dfc3f436ab609bdccbd6670"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:d5971250fa2d62bd5f215678096c6a6c709f6da49c56d047b661159f0bb96b8b",
+              "sha256": "d5971250fa2d62bd5f215678096c6a6c709f6da49c56d047b661159f0bb96b8b"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:fb3525a5d136147851596bacace12c3367c34a0d6b86a3a216b99512e21e3d90",
-              "sha256": "fb3525a5d136147851596bacace12c3367c34a0d6b86a3a216b99512e21e3d90"
+              "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/blobs/sha256:8d027c17105892bd605c982a0958a74384a3f163c26e2cef4dc6280f6f702511",
+              "sha256": "8d027c17105892bd605c982a0958a74384a3f163c26e2cef4dc6280f6f702511"
             }
           }
         }
@@ -1834,7 +1834,7 @@
         }
       },
       "flutter": {
-        "version": "3.10.2",
+        "version": "3.10.3",
         "options": {
           "full_name": "flutter"
         }
@@ -1906,7 +1906,7 @@
         }
       },
       "tunnelblick": {
-        "version": "3.8.8a,5776",
+        "version": "3.8.8b,5777",
         "options": {
           "full_name": "tunnelblick"
         }
@@ -1924,7 +1924,7 @@
         }
       },
       "figma": {
-        "version": "116.9.5",
+        "version": "116.9.6",
         "options": {
           "full_name": "figma"
         }
@@ -1954,7 +1954,7 @@
         }
       },
       "readdle-spark": {
-        "version": "3.5.1.49248",
+        "version": "3.5.2.49597",
         "options": {
           "full_name": "readdle-spark"
         }
@@ -2158,7 +2158,7 @@
         }
       },
       "whatsapp-alpha": {
-        "version": "2.23.11.75",
+        "version": "2.23.11.76",
         "options": {
           "full_name": "whatsapp-alpha"
         }
